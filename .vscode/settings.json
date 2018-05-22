@@ -3,6 +3,6 @@
         "erb": "html",
       },
     "files.associations": {
-        "*.erb": "html"
+        "*.erb": "erb"
     }
 }
