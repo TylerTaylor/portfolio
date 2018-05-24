@@ -18,4 +18,21 @@ class ProjectsController < ApplicationController
       end
     end
   end
+
+  def edit
+    @project = Project.find(params[:id])
+  end
+
+  def update
+    @project = Project.find(params[:id])
+
+    respond_to do |format|
+      if @project.update(params.require(:project).permit(:title, :subtitle, :body))
+        format.html { redirect_to portfolios_path, notice: "The record successfully updated." }
+      else
+        format.html { render :edit }
+      end
+    end
+  end
+
 end
