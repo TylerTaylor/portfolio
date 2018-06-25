@@ -11,8 +11,10 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require activestorage
-//= require turbolinks
-//= require jquery
 //= require bootstrap-sprockets
+//= require activestorage
+//= require jquery
+//= require jquery-ui
+//= require html.sortable
+//= require turbolinks
 //= require_tree .
