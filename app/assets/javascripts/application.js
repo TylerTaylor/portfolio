@@ -14,6 +14,7 @@
 //= require bootstrap-sprockets
 //= require activestorage
 //= require jquery
+//= require jquery_ujs
 //= require jquery-ui
 //= require html.sortable
 //= require turbolinks
