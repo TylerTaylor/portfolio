@@ -27,3 +27,5 @@
 
 # Hide the secrets!
 /config/secrets.yml
+
+.env
