@@ -20,7 +20,6 @@ class ProjectsController < ApplicationController
 
   def new
     @project = Project.new
-    3.times { @project.technologies.build }
   end
 
   def create
@@ -41,7 +40,7 @@ class ProjectsController < ApplicationController
   def update
     respond_to do |format|
       if @project.update(project_params)
-        format.html { redirect_to portfolios_path, notice: "The record successfully updated." }
+        format.html { redirect_to projects_path, notice: "The record successfully updated." }
       else
         format.html { render :edit }
       end
@@ -63,7 +62,7 @@ class ProjectsController < ApplicationController
                                     :body, 
                                     :main_image,
                                     :thumb_image,
-                                    technologies_attributes: [:name]
+                                    technologies_attributes: [:id, :name, :_destroy]
                                     )
   end
 
