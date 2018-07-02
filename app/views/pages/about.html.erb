@@ -1,17 +1,19 @@
-<div class="app-card-container">
+<div class="app-card-container about-page-container">
   <div class="card">
-    <h1>About Me</h1>
+    <h2>About Me</h2>
 
     <hr>
 
     <div class="row flex-container">
       <div class="col-md-5">
-        <%= image_tag "headshot1bw.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+        <div class="profile-img-container">
+          <%= image_tag "headshot1bw.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+        </div>
 
         <div class="skills">
           <% @skills.each do |skill| %>
             <div class="skill">
-              <h4><%= skill.title %></h4>
+              <h5><%= skill.title %></h5>
               <div class="progress">
                 <div 
                   class="progress-bar progress-bar-striped bg-warning"

@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 @import "gritter";
 
 /*
@@ -167,8 +168,9 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home_bg.png') no-repeat;
+  background: image-url('bokeh-bg.jpg') no-repeat;
   background-size: cover;
+  opacity: 50%;
 }
 
 .app-footer {
@@ -199,6 +201,18 @@ body {
 
 .profile-img {
   border: 1px solid gray;
+  // width: 300px;
+}
+
+.profile-img-container {
+  overflow: hidden;
+  margin: 0;
+}
+
+.profile-img-container img {
+  display: block;
+  width: 100%;
+  // margin: -21.875% 0;
 }
 
 .flex-container > .col-md-4 {
@@ -209,7 +223,7 @@ body {
   color: green;
 }
 
-.app-card-container h1 {
+.app-card-container h2 {
   margin-top: -15px;  
 }
 
@@ -221,4 +235,8 @@ body {
 
 .skill {
   margin-top: 10px;
+}
+
+.about-page-container {
+  margin-top: 20px;
 }

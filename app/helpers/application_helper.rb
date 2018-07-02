@@ -1,8 +1,18 @@
 module ApplicationHelper
-  def login_helper style = ''
+  def login_helper style = '', tag_type
+    # if current_user.is_a?(GuestUser)
+    #   (link_to "Register", new_user_registration_path, class: style) +
+    #   " ".html_safe +
+    #   (link_to "Login", new_user_session_path, class: style)
+    # else
+    #   link_to "Logout", destroy_user_session_path, method: :delete, class: style
+    # end
     if current_user.is_a?(GuestUser)
+      "<#{tag_type}>".html_safe +
       (link_to "Register", new_user_registration_path, class: style) +
+      "</#{tag_type}>".html_safe +
       " ".html_safe +
+      "<#{tag_type}>".html_safe +
       (link_to "Login", new_user_session_path, class: style)
     else
       link_to "Logout", destroy_user_session_path, method: :delete, class: style
@@ -37,10 +47,6 @@ module ApplicationHelper
       {
         url: projects_path,
         title: "Projects"
-      },
-      {
-        url: tech_news_path,
-        title: "Tech News"
       }
     ]
   end
