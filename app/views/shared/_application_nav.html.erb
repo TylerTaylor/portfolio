@@ -1,4 +1,4 @@
-<header class="masthead mb-auto">
+<!-- <header class="masthead mb-auto">
   <div class="inner">
     <h3 class="masthead-brand">Tyler Taylor</h3>
     <nav class="nav nav-masthead justify-content-center app-nav">
@@ -6,4 +6,27 @@
       <%= login_helper 'nav-link', 'span' %>
     </nav>
   </div>
+</header> -->
+
+<header class="masthead mb-auto">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <h3 class="masthead-brand">
+      <!-- <a class="navbar-brand" href="#">Tyler Taylor</a> -->
+      <!-- TODO: this should be a link but dont like the bootstrap styles turning it black -->
+      Tyler Taylor
+    </h3>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="nav nav-masthead app-nav ml-auto">
+        <%= nav_helper 'nav-link', 'span' %>
+        <%= login_helper 'nav-link', 'span' %>
+      </div>
+    </div>
+  
+  </nav>
 </header>
