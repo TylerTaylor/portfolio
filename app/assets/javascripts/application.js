@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require rails-ujs
-//= require bootstrap-sprockets
 //= require activestorage
 //= require html.sortable
 //= require cocoon
@@ -22,3 +21,4 @@
 //= require cable
 //= require turbolinks
 //= require_tree .
+//= require bootstrap-sprockets
