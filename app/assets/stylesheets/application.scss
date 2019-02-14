@@ -287,5 +287,11 @@ body {
     letter-spacing: 2px;
     padding: 15px 25px;
     -webkit-font-smoothing: antialiased;
-  }  
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+  }
 }
